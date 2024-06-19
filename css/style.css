@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+/********************************************************************************/
+/*************************************HEADER*************************************/
+/********************************************************************************/
+
+.header {
+    background-color: #4540DB; /*color del header*/
+
+    padding: .1rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /*posisiono el header para que no ocupe lugar al hero y el hero ocupe el 100% del alto y hace que el header nos persiga*/
+
+    width: 100%; /*hace que el header ocupe todo el ancho*/
+    z-index: 1;
+}
+
+.logo {
+    width: 6rem;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ddcc85;
+}
+
+
+/********************************************************************************/
+/***********************************MAIN-INICIO**********************************/
+/********************************************************************************/
+
+.hero {
+    height: 100vh;
+
+    background-image: url("../img/auto/meca.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-inicio {
+    width: 60%;
+    padding: 2rem;
+
+    background-color: rgba(255, 255, 255, 0.5); /*color de fondo medio transparente*/
+
+    border-radius: 2rem; /*borde redondeado*/
+    backdrop-filter: blur(5px); /*defuminado*/
+    color: #ddcc85; /*color del texto*/
+}
+
+.hero-title {
+    font-size: 4rem; /*tamaño del titulo*/
+}
+
+
+/********************************************************************************/
+/**********************************MAIN-CONTACTO*********************************/
+/********************************************************************************/
+
+.hero-container {
+    
+    height: 100vh;
+    background-image: url("../img/auto/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-div {
+    width: 50%;
+    padding: 2em;
+}
+
+.contacto {
+    width: 100%;
+    padding: 2rem;
+
+    background-color: rgba(100, 15, 117, 0.4);
+
+    border-radius: .5rem;
+    color: #ddcc85;
+
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.hero-contacto {
+    width: 100%;
+    padding: .3rem;
+    display: flex;
+}
+
+.hero-contacto button {
+    width: 100%;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+
+/********************************************************************************/
+/**********************************MAIN-NOSOTROS*********************************/
+/********************************************************************************/
+
+.hero-nosotros {
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    gap: 3rem;
+
+    background-image: url("../img/auto/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-article-nosotros {
+    flex: 1;
+    width: 50%;
+    padding: 4rem;
+    display: flex;
+}
+
+.nosotros-img {
+    width: 50%;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.nosotros-info {
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .5rem;
+}
+
+.nosotros-title {
+    width: 100%;
+    padding: 2rem;
+    color: #ddcc85;
+}
+
+.nosotros-text {
+    width: 100%;
+    padding: 2rem;
+
+    background-color: rgba(100, 15, 117, 0.4);
+
+    border-radius: 1rem;
+    color: #ddcc85;
+}
+
+/********************************************************************************/
+/**********************************MAIN-SERVICIOS********************************/
+/********************************************************************************/
+
+.hero-servicios {
+    height: 100%;
+    padding: 10rem;
+    display: flex;
+    background-image: url("../img/auto/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 3rem;
+}
+    
+.hero-article-servicios {
+    flex: 1;
+    background-color: rgba(100, 15, 117, 0.4);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.servicios-img {
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.hero-servicios-div {
+    padding: 2rem;
+}
+
+/********************************************************************************/
+/**********************************MAIN-PRODUCTOS********************************/
+/********************************************************************************/
+
+.hero-productos {
+    height: 100vh;
+    padding: 4rem;
+    display: flex;
+    gap: 3rem;
+
+    background-image: url("../img/auto/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-article-productos {
+    flex: 1;
+    width: 50%;
+    padding: 5rem;
+    display: flex;
+}
+
+.productos-div {
+    padding: 2rem;
+}
+
+.productos-img {
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+
+/********************************************************************************/
+/*************************************FOOTER*************************************/
+/********************************************************************************/
+
+.footer {
+    background-color: #4540DB;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    position: absolute;
+}
